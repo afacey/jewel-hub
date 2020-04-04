@@ -1,0 +1,46 @@
+.new-arrivals {
+    padding: 60px 0 120px;
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        margin-top: -220px;
+    }
+
+    &-image {
+        width: calc(50% - 50px);
+        box-shadow: 40px 40px 5px rgba(127, 47, 0, 0.1);
+        z-index: 1; 
+    }
+
+    &-content.flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    &-content {
+        color: $primaryBlack;
+        width: calc(50% - 50px);
+
+        &-title {
+            @include sectionHeading($primaryColour);
+        }
+        
+        &-text {
+            color: $primaryBlack;
+        }
+        
+        .section-link {
+            color: $primaryBlack;
+
+            &:hover,
+            &:focus {
+                color: $primaryWhite;
+            }
+        }
+    }   
+}

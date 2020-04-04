@@ -1,0 +1,39 @@
+// ============= COLOURS
+$primaryBlack: #232221;
+$primaryWhite: #FFFFFF;
+
+$primaryColour: #7B2F00;
+$secondaryColour: #491400;
+
+$primaryAccent: #FFB100;
+$secondaryAccent: #1F0A03;
+
+// ============= FONTS
+$baseFont: 'Barlow', sans-serif;
+$secondaryFont: 'Cardo', serif;
+
+
+// ============= MIXINS
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue / 10) * 1rem;
+}
+
+@mixin mainHeadingStyles {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+@mixin sectionHeading($color) {
+    color: $color;
+    @include fontSize(40);
+    margin-bottom: 20px;
+}
+
+@mixin itemImageSize($sizeValue) {
+    width: $sizeValue * 1px;
+    height: $sizeValue * 1px;
+
+    width: ($sizeValue / 10) * 1rem;
+    height: ($sizeValue / 10) * 1rem;
+}

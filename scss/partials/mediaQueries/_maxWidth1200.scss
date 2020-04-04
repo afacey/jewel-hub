@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+
+    .new-arrivals {
+        .flex-container {
+            position: static;
+            margin-top: 0;
+        }
+
+        &-content 
+            .section-title {
+                margin-bottom: 20px;
+            }
+            .section-link {
+                margin-top: 20px;
+            }
+    }
+
+    .featured-items {
+        padding: 60px 0 115px;
+
+        .item {
+            .image-container {
+                @include itemImageSize(265);
+            }
+    
+            &-info {
+                padding: 15px 30px;
+            }
+        
+            &-title,
+            &-price {
+                @include fontSize(20);
+            }
+        }
+    }
+}

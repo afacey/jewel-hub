@@ -1,0 +1,70 @@
+.blog {
+    background: url(./Assets/banner-image.jpg) center / cover;
+    color: $primaryWhite;
+    position: relative;
+    padding: 60px 0 80px;
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &-heading {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 90px;
+            border-top: 2px solid $primaryAccent;
+            position: absolute;
+            right: 78px;
+            bottom: -12px;
+        }
+    }
+
+    &-title {
+        @include sectionHeading($primaryWhite);
+        margin-top: 50px;
+    }
+    
+    &-post.flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        text-align: center;
+    }
+    
+    &-nav {
+        width: 100%;
+    
+        &-previous,
+        &-next {
+            color: $primaryWhite;
+            @include fontSize(50);
+            position: absolute;
+            top: 40%;
+            padding: 0;
+            transition: 0.3s;
+
+            &:hover,
+            &:focus {
+                color: $primaryAccent;
+            }
+        }
+
+        &-previous {
+            left: 5%;
+            padding-right: 15px;
+        }
+        
+        &-next {
+            right: 5%;
+            padding-left: 15px;
+        }
+    }
+}
+

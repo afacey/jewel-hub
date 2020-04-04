@@ -1,0 +1,56 @@
+.contact {
+    background: $secondaryAccent;
+    padding: 60px 0;
+
+    &-heading {
+        @include sectionHeading($primaryWhite);
+        text-align: center;
+    }
+
+    &-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    
+        &-input {
+            background: $secondaryAccent;
+            color: $primaryAccent;
+            @include fontSize(20);
+            width: calc(50% - 20px);
+            border: 1px solid $primaryWhite;
+            padding: 15px;
+            margin: 20px 10px;
+    
+            &::placeholder {
+                color: $primaryAccent;
+                @include fontSize(20);
+            }
+
+            &:invalid {
+                outline: none;
+            }
+            
+            &:focus {
+                border: 1px solid $primaryAccent;
+                outline: none;
+            }
+        }
+    
+        &-message {
+            resize: none;
+            width: calc(100% - 20px);
+            height: 200px;
+            margin: 10px 0;
+        }
+    
+        &-button {
+            background: $secondaryAccent;
+            color: $primaryWhite;
+            @include fontSize(20);
+            padding: 10px 40px;
+            margin: 20px;
+        }   
+    }   
+}

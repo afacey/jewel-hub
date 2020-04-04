@@ -1,0 +1,22 @@
+@media (max-width: 580px) {
+    header {
+        .header-content {
+            .header-title {
+                @include fontSize(50);
+            }
+        }
+    }
+
+    .featured-items {
+        .item {
+            .image-container {
+                @include itemImageSize(350);
+            }
+            
+            &-info {
+                width: 210px;
+                padding: 20px 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@media (max-width: 395px) {
+    header {
+        .header-content {
+            .header-title {
+                @include fontSize(32);
+            }
+        }
+    }
+
+    .featured-items {
+        .item {
+            &-title,
+            &-price {
+                @include fontSize(16);
+            }
+
+            .image-container {
+                @include itemImageSize(250);
+            }
+
+            &-info {
+                width: 140px;
+                padding: 10px 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import "./partials/setup";
+@import "./partials/variablesMixins";
+@import "./partials/global";
+@import "./partials/header";
+@import "./partials/newArrivals";
+@import "./partials/blog";
+@import "./partials/featuredItems";
+@import "./partials/contact";
+@import "./partials/footer";
+
+// Media Queries
+@import "./partials/mediaQueries/maxWidth1200";
+@import "./partials/mediaQueries/maxWidth1050";
+@import "./partials/mediaQueries/maxWidth800";
+@import "./partials/mediaQueries/maxWidth580";
+@import "./partials/mediaQueries/maxWidth480";
+@import "./partials/mediaQueries/maxWidth395";
